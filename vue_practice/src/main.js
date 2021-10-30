@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
+
 Vue.config.devtools = true;
 
 // ローカルストレージ
@@ -19,7 +20,6 @@ var todoStorage = {
   }
 }
 
-
 // ★STEP1
 new Vue({
   el: '#app',
@@ -34,7 +34,8 @@ new Vue({
       { value: -1, label: 'すべて' },
       { value: 0, label: '作業中' },
       { value: 1, label: '完了' }
-    ]
+    ],
+    Hoge: 0
   },
 
   computed: {
